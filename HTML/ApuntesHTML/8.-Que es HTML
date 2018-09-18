@@ -1,0 +1,13 @@
+Lenguaje de maquetado de paginas web.
+
+El front end: La pagina como tal. Informacion visible de la pagina.
+El back end: El lado de programacion, del servidor. Como la base de datos, archivos fuente, etc.
+
+
+HTML CCS Y JS son las bases de las paginas web.
+
+-HTML: Indica el contenido de una pagina. (NO ES UN LENGUAJE DE PROGRAMACION, SI NO DE MAQUETACION)
+    Sirve para estructurar la informacion a traves de etiquetas y sea facilmente analizable.
+    
+-CSS: Indica como se mostrara la pagina, el aspecto
+-JavaScript: Permite Interacciones para dinamismo en paginas

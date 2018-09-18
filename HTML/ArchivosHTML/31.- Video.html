@@ -1,0 +1,44 @@
+<!--
+    Video
+La etiqueta de video es: <video>
+Su sintaxis:
+    <video src="UbicacionArchivo/NombreArchivo.Extension" type="video/ExtensionDeVideo" controls="controls"></video>
+De nuevo, si se le quiere dar un ancho y un alto, es mas recomendable hacerlo con CSS, aunque puede hacerse con HTML.
+
+A veces, cuando se carga un video que esta bien, no se sabe cual navegador utilizara el cliente para visualizarlo, ni 
+la version de su navegador, y por ende, no se puede visualizar, o indica que esta corrupto el archivo. La razon es que no todos 
+los navegadores funcionan con los codecs ni los algoritmos de compresion de audio y video.
+Es por eso QUE NO SE RECOMIENDA USAR LA ETIQUETA DE VIDEO EN UNA PAGINA, por el motivo anterior, ademas de otros (peso, etc).
+
+Lo que se recomienda para ello, es subir el video a una plataforma dedicada, e incrustar ese video en la pagina, para que no ocasione
+estos problemas. Google de hecho valora mas que se haga esto (Sobre todo con Youtube).
+
+Para incrustar un video de Youtube:
+
+    1.- Ir a un video de Youtube
+    2.- En la pestaña de: COMPARTIR dar click y despues dar click en INSERTAR.
+    3.- Copiar y pegar en la pagina el codigo que comienza con: <iframe.....> 
+        
+De igual manera, para el anchio y alto es mejor hacerlo con CSS
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Video</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <!--Etiqueta de video-->
+    <video src="TOP SPIN TUTORIAL   EL EFECTO DE BALE, DE BRUYNE, ERIKSEN... .mp4" type="video/mp4" controls="controls" height="600" width="600"></video>
+
+    <!--Incrustacion de video de Youtube-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HIw9d9BHQ6M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <!--Revisar otros controles que pueden ser incrustados-->
+</body>
+</html>

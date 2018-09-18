@@ -1,0 +1,14 @@
+Es posible conseguir el mismo aspecto si se usa la version 4 o 5 de HTML.
+Pero no asi internamente.
+
+Las nuevas etiquetas SE PREMIAN, SE POSICIONAN MEJOR en buscadores.
+
+Es importante pensar desde el principio en el posicionamiento SEO.
+Sin un buen posicionamiento, no vale de nada la pagina.
+
+
+En HTML 4 todas la etiquetas eran <div> y con identificadores (nombres) para saber
+a que se referian.
+
+En HTML 5, a cada parte/area de la pagina se le ha puesto un nombre. Hay etiquetas
+propias.

@@ -1,0 +1,19 @@
+Ver el archivo en Udemy (Seccion 2, clase 10)
+
+Algunas por ejemplo:
+
+<center> Para centrar el contenido. Usar CSS en su lugar
+<font> Establece el formato para mostrar la fuente de algun texto. Tambiuen usar CSS en
+en su lugar.
+
+Existen muchas etiquetas que pueden ser sustituidas con CSS.
+
+IMPORTANTE:
+
+Cualquier cosa que tenga que ver con la apariencia, o visualizacion, aspecto
+imagenes, hacerlo CON CSS
+
+Otra cosa que no sea lo anterior: USAR HTML.
+
+Se hace enfasis en lo anterior para dejar de tener dudas en cuanto a que usar y que no
+usar de HTML.
