@@ -1,0 +1,26 @@
+/*
+    Cada nevegador tiene una forma propia de dar a visualizar una pagina. Tiene un sistema de interpretacion de
+    etiquetas. Lo primero que se le aplica a la pagina es el CSS del navegador.
+
+    Existe otra hoja de estilos antes de la que nosotros desarrollamos, que es la del usuario. El usuario
+    puede modificar a su gusto los estilos, si es que nosotros no los especificamos, desde su navegador.
+
+    En la tercera parte entramos los programadores de CSS. Donde se tiene que programar todo lo que llevara
+    la pagina de manera explicita.
+
+    Normalize es una forma de forzar atributos que se mostraron como no queriamos en el navegador, y se muestren como nosotros
+    queremos. Existen otros como reset tambien.
+
+    Normalize se descargo de: https://necolas.github.io/normalize.css/
+
+    Antes de nada, hay que normalizar los estilos.
+*/
+
+header
+{
+    width: 100%;
+    height: 50px;
+    background: red;
+}
+
+

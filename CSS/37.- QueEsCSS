@@ -1,0 +1,13 @@
+Es importante saber antes que, a veces, el codigo que se utiliza no es el mismo que utilizan otros programadores
+pero consiguen el mismo resultado. Es bueno conocer para que es cada cosa y darle el uso que corresponde.
+
+La hoja de estilos de cascada (Cascade Style Sheet) es una forma de darle a la pagina una mejor visualizacion antesuna pagina 
+web. 
+
+Al decir que es en Cascada, modifica las paginas web "de golpe" a las que se les incrusta un CSS. Esto es:
+si tenemos varias paginas de un sitio, podemos aplicar un solo archivo CSS, y este afectara a todas esas paginas.
+
+No se recomienda aun asi tener un solo CSS para todo el sitio. Es mejor tener un CSS que englobe caracteristicas comunes
+para todas, y tener CSS´s para archivos mas expecificos, con caracteristicas especificas.
+
+Cuando se necesita enlazar un CSS a un HTML?: Cuando se necesita que varias paginas compartan un mismo estilo.

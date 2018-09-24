@@ -1,0 +1,19 @@
+/*
+Hay que tener en cuenta la ubicacion de los archivos con respecto a otros, al momento de enlazarlos, vincularlos.
+
+VERIFICAR LOS LINKS ENTRE ESTE ARCHIVO Y EL DE HTML. ESTAN EN DIFEERENTES CARPETAS AMBOS.
+Este archivo se enlazo a HTML/ArchivosHTML/39_1.- EnlaceCSSAHTML.html 
+
+Se crearon 2 archivos con nombres similares para hacerlo al nivel de carpeta (al mismo nivel)
+
+Otra forma de crear estilos es utilizando la etiqueta <style>. Con ella, podemos definir estilos
+para diferentes contenidos, pero solo serian para esa pagina en especifico. No para otras.
+
+La tercera forma es incrustar las propiedades dentro de una etiqueta en especifico, se agrega el estilo al elemento. No es para nada recomendable
+ya que conlleva muchisimo trabajo. 
+*/
+header{
+    width: 100%;
+    height: 50px;
+    background: red;
+}

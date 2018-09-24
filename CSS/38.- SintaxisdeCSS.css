@@ -1,0 +1,34 @@
+/*
+Comentario en CSS
+*/
+
+/*
+Sintaxis:
+    elemento
+    {
+        atributos : valor;
+        estilos : valor;
+        propiedades : valor;
+    }
+
+Despues de los 2 puntos se especifica el valor.
+Debe dejarse un espacio entre los 2 puntos y las palabras/valores que esten a sus lados
+Se  pueden agregar tantas propiedades como sea posible. como:
+    -Altura
+    -Anchura
+    -Color de fondo
+    -Alineado
+    -Margenes
+    -entre otras
+La diferencia entre una propiedad y otra, la marca el ";". Por costumbre, hay que poner el punto y coma siempre.
+
+Al elemento se le puede referenciar de muchas maneras. Siempre referencia dentro del body, no en header.
+El archivo  CSS indica como se visualiza la pagina
+*/
+elemento
+{
+    /*Propiedad*/
+    grid-area : 1254;
+    /*Propiedad*/
+    display: block;
+}

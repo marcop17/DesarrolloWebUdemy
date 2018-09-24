@@ -1,0 +1,13 @@
+
+/*Hay que tener en cuenta la ubicacion de los archivos con respecto a otros, 
+al momento de enlazarlos, vincularlos.
+
+Se enlazco este archivo con: 39.- EnlaceCSSAHTML_1.html */
+
+header
+{
+    width: 100%;
+    height: 50px;
+    background: red;
+}
+
