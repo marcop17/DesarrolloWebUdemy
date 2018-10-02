@@ -1,0 +1,14 @@
+Es importante tener un orden en lo que se escribe, para entenderlo y para darle un buen mantenimiento.
+COnsejos:
+    1.- Que este identado. Cada cosa debe tener un nivel, para saber cual es su jerarquia dentro del cofigo.
+    2.- Nombres usados que tengan sentido con el contenido.
+
+    Para COnsejos
+    1.-Es aconsejable hacer anotaciones acerca de como se va a estructurar la pagina. El mismo orden del HMTL 
+    debe ser igual al de CSS, todo al mismo nivel, si asi se quiere.
+    2.- Para cosas globales, ponerlas hasta arriba.
+    3.- Para cuesiones de SEO, las cosas menos importantes no deben ir hasta arriba.
+    3.- En CSS, es aconsejable poner padres e hijos dentro de cada bloque de cofigo.
+    4.- Ordenar las propiedades en orden alfabetico.
+
+

@@ -1,0 +1,47 @@
+/*
+El selector adyacente se emplea para seleccionar elementos que son hermanos 
+(su elemento padre es el mismo) y están seguidos en el código HTML. 
+Este selector emplea en su sintaxis el símbolo +
+
+Un selector adyacente cambia a los hermanos, PERO NO AL PADRE, (osea, al primer elemento)
+*/
+
+p+p{
+    color: red;
+    font-weight: bolder;
+}
+
+
+/*
+Hijos.
+Para aplicar un estilo a un hijo, se hace:
+
+etiqueta_padre > etiqueta_hijo{
+}
+
+Donde:se aplicara el estilo a toda etiqueta_hijo que este dentro de
+etiqueta_padre.
+En el siguiente codigo: se aplicara un estilo a todos los "p" que esten
+dentro de "div"
+Puede o no llevar el ">"
+*/
+div#hijo1 > p{
+    color: darkblue;
+}
+
+/*Debe tenerse en cuenta la jerarquia absoluta, por elemplo:
+si un parrafo esta dentro de un article, y a su vez, este ultimo
+esta dentro de un div, debe hacerse de la siguiente manera*/
+div#hijo2 > article > p{
+    color: bisque;
+}
+
+/*
+Selector para hijos
+Este selector es todo lo contrario al adaycente, siendo para los hermanos menores, (subyacente)
+Aplicara el estilo para todas las etiquetas que que sean "hermanos menores". Pueden aplicarse incluso
+si estan fuera de un bloque
+*/
+p ~ p{
+    color: beige;
+}

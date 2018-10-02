@@ -1,0 +1,53 @@
+/*
+Selector de atributos y colision de estilos
+Esto es muy util al momento de seleccionar un atributo de una etiqueta en particular.
+Solo se cambia el estilo de ese elemento, haciendo referencia al atributo. Es muy 
+especifico.
+
+Tambien podemos definir al atributo UN VALOR EN ESPECIFICO para que se le apliquen los estilos.
+El atributo puede terner varios valores.
+
+
+*/
+h2[title]{
+    color: red;
+}
+/*Definicion de estilo en atributo con valor especifico*/
+h3[title="hola"]{
+    color: royalblue;
+}
+
+/*Podemos incluso, si se tienen varios valores en un atributo, escoger alguno y
+asigarle el estilo solo a ese, de la siguiente manera: */
+h4[title ~="valores"]{
+    color: yellow;
+}
+/*Se usa la sintaxis: etiqueta[atributo ~= valor] */
+
+/*
+Esta es otra forma de poner un estilo a otro tipo de atributo, usando el lenguaje (lang). Es muy util 
+al momento de tener varias opciones seguidas de un prefijo, en este caso, de paises. 
+Se hizo uso del prefijo "es" (español) y dentro de cada etiqueta HTML este prefijo iba seguido de un
+guion y las siglas del pais, (MX, ES, etc.) y se cambian todos las etiquetas que contengan ese prefijo.
+No se utiliza una clase aqui por cuestiones de SEO.
+*/
+h5[lang |= "es"]{
+    color: turquoise;
+}
+
+
+/*COLISION DE ESTILOS
+Cuando se tienen varias etiquetas, y se les aplican muchos estilos, exixte una colision. Esto es, una jerarquia de 
+estilos que se tiene que decidir cuales se aplicaran primero que otros.
+Los estilos, de acuerdo a una jerarquia se aplican:
+    1.- CSS del navegador.
+    2.- CSS del usuario.
+    3.- CSS enlazados en el orden que se han enlazado.
+    4.- Propiedades que se herendan: Todo aquello que este dentro de una etiquetam y esta etiqueta tenga un estilo.  
+    5.- Propiedades propias del elemento. 
+    6.- Clases asignadas, y en el mismo orden de asignacion. Se aplica el ultimo valor de un atributo
+    7.- Identificador. (Si es el ultimo dentro de la etiqueta, tomara el valor que tenga el identificador) 
+    8.- Propiedades de tipo "!important". Se resalta el atributo como importante. Si se siene varios de estos,
+    tomara el ultimo "!important"
+
+*/

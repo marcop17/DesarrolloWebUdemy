@@ -1,0 +1,18 @@
+Un prefijo es un atrubuto CSS que, para implementarse en los navegadores, hay que especificarse exactamente
+la reproduccion en un navegador en particular.
+Esto es una buena practica
+
+Basicamente, son instrucciones propias que tiene cada navegador para mostrar cosas, pero usadas en CSS.
+Por ejemplo:
+
+    -webkit-: Para google chrome, safari, y androir
+    -moz- : Firefox
+
+Entre otros. Si se requiere tener compatibilidad con todos los navegadores, hay que poner todos los prefijos.
+
+
+Can I Use es una pagina que ayuda a saber las propiedades de CSS que tienen o no problemas en la actualidad. Esto
+para que , en un futuro, se pueda saber la compatibilidad de las propiedades, si son o no aun validas, y cuales
+utilizar. Poner especial atencion a las cajitas amarillas que tienen las versiones de los navegadores en la pagina.
+
+Can I Use: https://caniuse.com/

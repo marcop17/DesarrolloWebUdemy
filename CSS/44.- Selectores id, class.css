@@ -1,0 +1,65 @@
+/*
+Selectores id class
+
+Consiste en, de todos los elementos HTML, seleccionar aquellos a los que se les dara estilo
+
+
+*/
+
+/*Con la siguiente instruccion, se da estilo A TODOS LOS H2 DE LA PAGINA (o a todas las etiquetas con el mismo nombre), sin excepcion alguna*/
+
+h2{
+    color: red;
+}
+
+/*Por el contrario, si solo se desea dar estilo a un solo h2, que este dentro de otra etiqueta (Sea hijo de una etiqueta),
+hay que poner la "ruta" donde queremos el estilo
+*/
+header h2{
+    color: brown;
+}
+
+/*Podemos poner el mismo estilo a diferentes etiquetas, de la siguiente manera*/
+h3, h4{
+    color: blueviolet;
+}
+
+/*Podemos dar estilo a una etiqueta en concreto. Esto se hace con un IDENTIFICADOR
+Los identificadores deben usarse solamente cuando se requiere que un solo elemento, y solo ese elemento
+tenga ese estilo. Deben ser UNICOS/EXCLUSIVOS
+
+La sintaxis es:
+
+    etiqueta#id{
+    }
+Incluso puede ir sin el nomre de la etiqueta si asi se desea, pero para mayor control, y mejor mantenimiento, es mejor poner la etiqueta.
+*/
+
+p#azul{
+    color: blue;
+}
+
+
+/*Class
+Las clases sirven para definir estilos a un grupo de elementos, que lo compartiran.
+Su sitaxis es:
+
+    .clase{
+
+    }
+
+Lo importante de las clases es que, al momento de editar los atributos que estas contengan, todos los elementos
+de HTML a los que se les este aplicando el estilo, van a cambiar por el nuevo, no hay necesidad de cambiar
+uno por uno.
+Para asignale varias clases a un elemento de HTML, simplemente habra que escribir la clase dejando un espacio entre la anterior clase.
+*/
+.prueba{
+    color: aquamarine;
+}
+/*Clase que acompaña a la anterior en elementos especificos*/
+.grande{
+    font-size: 20px;
+}
+
+/* Un elemento puede pertenecer a varias clases, pero un elemento no puede poseer a varios IDs*/
+

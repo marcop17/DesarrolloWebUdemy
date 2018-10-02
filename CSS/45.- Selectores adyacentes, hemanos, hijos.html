@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Selectores adyacentes, hemanos, hijos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Enlace de CSS con HTML-->
+    <link rel="stylesheet" type="text/css" media="screen" href="45.- Selectores adyacentes, hemanos, hijos.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <!--Selector adyacente-->
+    <p>Texto1</p> <!--No se cambia este elemento-->
+    <p>Texto2</p> <!--A partir de este elemento, lo siguientes se cambian-->
+    <p>Texto3</p>
+    <p>Texto4</p>
+    <p>Texto5</p>
+    
+    <!--Aplicacion de estilos a hijos-->
+    <div id="hijo1">
+        <p>Hijo1</p>
+        <p>Hijo2</p>
+        <p>Hijo3</p>
+    </div>
+    <!--Aplicacion de estilos en forma jararquica absoluta-->
+    <div id="hijo2"> <!--Padre-->
+        <article>    <!--HIjo-->
+            <p>Nieto1</p> <!--Nieto-->
+            <p>Nieto2</p> <!--Nieto-->
+            <p>Nieto3</p> <!--Nieto-->
+        </article>
+    </div>
+    <!--Aplicacion a hermanos menores-->
+    <div id="hermanos">
+        <article>
+            <p>hermeno menor 1</p>
+            <p>hermano menor 2</p>
+            <p>hermano menor 3</p>
+        </article>
+    </div>
+    <p> hemano menor 4</p> <!--Se le aplica el estilo incluso a este, por que tambien es hermano menor. Al parecer, tambien afecta a hermanos anteriores.-->
+
+   
+</body>
+</html>

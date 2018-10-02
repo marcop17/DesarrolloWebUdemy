@@ -1,0 +1,25 @@
+No todas las propiedades de CSS no se aplican a la pagina. Cada navegador tiene un motor de renderizar una pagina.
+Es importante saber que cada navegador puede o no mostrar las caracteristicas de CSS, dependiendo de la version
+que se utilice de este ultimo.
+
+Para evitar el escribir mas codigo, se utilizan los compatibilizadores.
+
+Uno es modernizr. Este compatibilizador provee muchas cosas para aplicar a los estilos de CSS, y funcionen en navegadores
+antiguos.
+
+Modernizr descargado de: https://modernizr.com/
+
+Al momento de ingresar a la pagina: saldra lo siguiente:
+    1.- Si damos click en "Add your detects" podremos seleccionar las caracteristicas 
+    que deseemos, una por una.
+    2.- Si damos click en "Development Build" se seleccionaran todas las caracteristicas
+    que deseamos. Util si no sabemos que usar. Desventaja de ser mas pesado el archivo, y 
+    tener cosas que a lo mejor no se usaran (codigo basura)
+
+Para descargar el archivo generado en ambas opciones, simplemente habra que dar click en 
+"Build" y se descargara un archivo javascript. 
+
+Para vincularlo al HTML hay que usar la etiqueta <script>
+
+Una vez teniendo el modernizr, y tambien el normalizer, podemos empezar a escribir codigo.
+
