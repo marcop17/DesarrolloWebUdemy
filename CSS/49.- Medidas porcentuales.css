@@ -1,0 +1,21 @@
+/*
+Porcentajes
+La medidas porcentuales de las etiquetas se basan de las medidas del padre que las contega.
+Los porcentajes son muy utiles al momento de hacer una pagina responsive.
+Permiten:
+    1.-Crear un desarrollo flexible
+    2.-Crear un desarrollo adaptable
+    3.- Se adaptan.
+*/
+
+div.fija{
+    height: 100px;
+    width: 100px;
+    background: red;
+}
+div.porcentual{
+    height: 100px;
+    width: 50%;
+    background: green;
+    margin: .5%;
+}

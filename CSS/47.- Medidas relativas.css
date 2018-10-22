@@ -1,0 +1,54 @@
+/*
+Tamaños de los diversos elementos del un HTML, mediante un CSS
+Existen 2 tipos de medidas:
+    1.- Relativas: Son medidas adaptablem y cambian dependiendo de diversos factores. 
+    Permiten dar un desarollo mas adaptable, flexible y una experiencia mejor al usuario.
+    2.- Absolutas: Medidas fijas que nunca cambian.
+
+*/
+
+/*Definiciones para el body. y se herede a los demas elementos*/
+/*La primer unidad son los: PIXELES
+    Como tips:
+    1.- NUNCA poner el numero/valor, separado por un espacio del "px", si no, no funciona.
+    2.- Los tamaños pueden ser decimales. Es lo mismo : .4 que 4.0.
+Los pixeles son una medida relativa, por que no todos los pixeles tienen el mismo tamaño en todas las pantallas.
+Los pixeles dependen de la pantalla. Incluso se reescalan.
+
+Son la  medida mas acostumbrada
+*/
+body{
+    font-size: 16px /*pixeles*/;
+}
+
+/*EM
+En esta medida, se toma de referencia a la letra "M" mayuscula, y su anchura. Con esto, se calcula
+el tamaño de las demas letras.
+Son heredables
+*/
+/*Aqui toma 2 ems, cuando se ejecuta el HTML, se dobla el tamaño de la letra. Hereda el tamaño de la propiedad del body*/
+p.em{
+    font-size: 2em;
+}
+
+/*Medida de un EM, para todo "p" que este dentro de "div"*/
+div p{
+    font-size: 1em;
+}
+
+
+/*
+REM
+Esta medida reescala la letra, al tamaño original que tiene el root*/
+/*Medida de un EM, para todo "p" que este dentro de "div", que tenga la clase "rem"*/
+div p.rem{
+    font-size: 1rem;
+}
+
+/*
+EX
+Altura de la letra "x" minuscula
+*/
+p.ex{
+    font-size: 1ex;
+}

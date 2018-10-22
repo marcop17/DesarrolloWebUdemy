@@ -1,0 +1,35 @@
+/*
+Esta es otra forma de dar formato al color
+Lo que se hace aqui es jugar con los colores dados, de tal forma que se permita la visualizacion de una 
+transparencia en el color dado.
+Dentro de la declaracion del color, se indica, ademas de los tres parametros ya conocidos
+un cuarto llamado "alpha" cuyo valor es de 0 o 1, donde el 0 es totalmente trasnparente, y 1 es un color solido,
+los valores entre esos 2 son filtraciones de luz, la transparencia que tendra.
+
+Para el caso del RGB, no es necesario poner porcentajes
+Para el caso de HSL, si es necesario colocar porcentajes al segundi
+y tercer valor.
+*/
+/*Delimitacion de area de muestra*/
+body{
+    background: blue;
+}
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 20px;
+}
+/*Color usando HSL y trasnparencia(no usar: hsla como nomre de clase, ya que es una palabra reservada, dentro de la sintaxis si usar)*/
+.hsl_t{
+    background: hsla(75, 100%, 80%, 1);
+
+}
+/*Color usando RGB y trasnparencia(no usar: rgba como nomre de clase, ya que es una palabra reservada, dentro de la sintaxis si usar)*/
+.rgb_t{
+    background: rgba(80, 45, 95, 1);
+}
+/*Visualizacion de transparencia, va de la mando con otro color, en este caso, con el de body*/
+.semi_t{
+    background: rgba(56, 133, 62, 0.952);
+}

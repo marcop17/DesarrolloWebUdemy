@@ -1,0 +1,30 @@
+/*
+Otro tipo de formato de color.
+La  medida en que se basa el color es el "hue"
+
+Partiendo del centro, se indica la intensidad del color.
+
+La sintaxis dentro de CSS es:
+    atributo(hue, saturacion, iluminacion)
+Donde:
+    -Hue (Tonalidad): Es el grado de color en la rueda de color en escala de 
+    0 a 360. 0 es rojo, 120 es verde y 240 es azul
+    -Saturacion (Saturation): Es el valor de porcentaje, medido en escala de grises; 0 es gris y 
+    100& es el color completo.
+    -Iluminacion (Lightness): Tambien un valor porcentual; 0% es negro, 100% es blanco
+    
+    Es importante saber que para los 2 parametros: saturacion e iluminacion, hay que colocar expresamente
+    el valor en porcentaje, sino no se visualizara
+*/
+
+/*Se delimita area de muestra*/
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 20px;
+}
+/*Uso del HSL*/
+.hsl{
+    background: hsl(120, 20%, 50%);
+}

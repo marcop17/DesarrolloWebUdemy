@@ -1,0 +1,21 @@
+/*
+Existen muchas maneras de decirle al navegador como mostrar colores
+Cuando se busca un color para asignarlo, se encuentra en una tabla, donde:
+    1.- Esta el nombre del color. La palabra reservada que le corresponde.
+    2.- Codigo Hezadecimal RGB
+    3.- Codigo Decimal RGB
+El 3 y 4 son lo mismo, pero con un sistema de numeracion diferente.
+No todos los colores tienen una palabra reservada. Los colores mas habituales tienen 
+su palabra, pero las tonalidades mas bajas o altas son representadas a traves de los numeros
+o del sistema numerico.
+*/
+
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 20px;
+}
+.reservadas{
+    background: lime;
+}

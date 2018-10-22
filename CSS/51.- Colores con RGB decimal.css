@@ -1,0 +1,24 @@
+/*
+Los colores, en dispositivos electronicos, son en realidad una mezcla de colores, en canales
+de luz.
+Se utilizan los colores primarios: Red, Green, Blue (RGB), y se indica la intensidad de cada 
+uno de estos.
+
+*/
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+/*
+Cuando se hace uso de RGB, se pone sintacticamente:
+ rgb(Color rojo del 0 al 255, verde del 0 al 255, azul del 0 al 255)
+Cualquier valor entre 0 y 255. Con esto, se indica la potencia de ese color
+en la pantalla, entre menor valor, se acerca al negro, mas alto, se acerca al color indicado.
+
+*/
+.luzRGB{
+    background: rgb(150, 150, 210)
+}

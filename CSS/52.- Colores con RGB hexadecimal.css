@@ -1,0 +1,28 @@
+/*
+Colores hexadecimales.
+
+Mismo formato que el decimal, con tres valores. Solo cambia 
+la forma de numerar, utilizando el sistema hexadecimal (16).
+Va del 0 al 9, y para no repetir el 10 (que seria combinacion del 1 con el 0)
+se comienza con las letras.
+*/
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+/*Sintaxis
+    atributo: #NO1NO2NO3 (Todos los numeros juntos)
+*/
+.hexadecimal{
+    background: #643005;
+}
+/*Cuando los tres canales de luz puedan repetirse al mismo tiempo, o sus valores se repitan se puede simplificar, 
+poniendo solo un canal, con el numero que le corresponda*/
+/*
+ejemplo:   #55FF88
+resultado: #5F8
+y sera el mismo color
+*/

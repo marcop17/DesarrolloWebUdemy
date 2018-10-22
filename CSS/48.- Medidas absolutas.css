@@ -1,0 +1,51 @@
+/*
+Medias absolutas
+No todas las medidas se utilizan, pero es conveniente conocerlas
+para tener referencia en el futuro, por si se ve que alguien mas las utiliza
+y saber a que se refiere.
+El navegador se encarga de hacer los calculos para hacer los ajustes.
+Por lo regular, son medias muy grandes. Y por esto, puede medirse mediante
+decimales, lo que tambien es muy comun
+
+*/
+
+/*PULGADAS
+Se identifican como "in"
+*/
+/*Parrafos de clase "in"*/
+p.in{
+    font-size: 2in;
+    /* font-size: .2in; */
+}
+
+/*CENTIMETROS
+Se identifican como "cm". Cada caracter aqui, medira el valor que le coloquemos.
+*/
+/*Parrafos de clase "cm"*/
+p.cm{
+    font-size: 2cm;
+}
+
+/*MILIMETROS
+Se identifican como "mm"
+*/
+/*Parrafos de clase "mm"*/
+p.mm{
+    font-size: 2mm;
+}
+
+/*PUNTOS
+Se identifican como "pt". Son muy pequeños. Un punto son: 0.35mm. Se utiliza mucho para impresion.
+*/
+/*Parrafos de clase "pt"*/
+p.pt{
+    font-size: 30pt;
+}
+
+/*PICAS
+Se identifican como "pc". Son muy pequeños tambien. Un pica son: 4.23mm, y 1 pica equivale a 12 puntos. 
+*/
+/*Parrafos de clase "pc"*/
+p.pc{
+    font-size: 3pc;
+}

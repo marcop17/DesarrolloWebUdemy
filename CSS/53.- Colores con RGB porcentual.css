@@ -1,0 +1,20 @@
+/*
+Este es otro tipo  de formato de colores dentro de CSS
+
+Solo es colocar dentro de RGB() y separado por comillas, la intensidad de cada color
+que se desea.
+
+Probabblemente esta forma de colores es un limitante para el diseño
+*/
+
+/*Se delimita area de muestra*/
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.porcentual{
+    background: rgb(50%, 20%, 75%) /*Se coloca el porcentaje de cada color, indicando la intesidad*/ 
+}

@@ -1,0 +1,25 @@
+/*
+Una de las cosas fundamentales de CSS. Aqui se determina el tamaño de las cosas que tendra cada elemento
+dentro de la pagina. El espacion que ocupara cada cosa.
+Existes muchos atributos que, en conjunto, actuan de tal manera que da un espacio adecuado a los elementos de la pagina.
+Cada elemento en pagina, tiene los siguientes atributos:
+
+    Padding: Es un borde interno, que va hacia dentro del elemento, incluso puede tener un borde. Se aplica al contenido de la etiqueta.
+    No usarse para separarse elementos entre si. Usar margenes en su lugar. 
+    Background-image: Un elemento puede llevar una imagen como fondo, que no afectara el tamaño del elemento. 
+    A nivel estetico visual.
+    Margin: Separa el elemento de otros, asigandole un margen.
+*/
+/*Area de muestra
+En la siguiente area, la cajita ocupa dentro del area 102 pixeles, esto es:
+    -100 de anchura, y un pixel de borde izquierdo, y un pixel de borde derecho.
+TODO CUENTA. ES MUY IMPORTANTE TENER ESTO EN CUENTA PARA EL "RESPONSIVE DESINGN".
+El elemento que estamos usando, en realidad ocupa 142 px, por que:
+*/
+div{
+    width: 100px;  
+    height: 100px; /*Anchura, como contenido*/
+    border: 1px solid black; /*2 pixeles a la izquiera y derecha*/
+    margin: 20px; /*20 pixeles como margen PROPIO del elemento, por cada borde*/
+    padding: 10px; /*Agregando esta propiedad, se incrementa a 162px*/
+}
