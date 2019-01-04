@@ -1,0 +1,45 @@
+/*
+Position, Static, Relative, Absolute, Fixed
+
+Son las caracteristicas CSS que etablecen en que punto de la pagina comenzara a mostrarse el elemento
+HTML que se haya establecido en el codigo.
+
+Por defecto se muestran con los valores de POSITION y STATIC. Esquina superior izquierda
+del ELEMENTO PADRE. 
+
+Dentro de estas caracteristicas:
+-STATIC: No toma en cuenta coordenadas, son un defecto absoluto. Va hacia abajo.
+-RELATIVE: Toma en cuenta coordenadas (top, left, right, botton). Se relativiza el elemento hijo
+en respecto al padre. Incluso puede contener valores negativos.
+-ABSOLUTE: Cuando a un elemento se le aplica un posicionamiento absolute, este elemento 
+"no existe" para el resto de elementos en cuanto al mismo posicionamiento, por ello otros
+elementos pueden estar debajo(o atras), asumiendo la posicion que tenia este elemento anteriormente.
+Al elemento con este posicionamiento, al momento de asignarle coordenadas, las toma de el padre superior 
+QUE TENGA UN POSITION QUE NO SEA ABSOLUTE, pero si que sea STATIC o RELATIVE.
+-FIXED: Esta siempre va a posicionar las coordenadas con RESPECTO AL BODY. No se mueve nunca.
+Util para menus.
+
+Un punto importante es que siempre hay que darle un position al padre, para que los hijos no
+tomen a body como super padre, y haya problemas de posicionamiento de los elementos.
+
+*/
+.padre{
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+    background: orange;
+}
+
+.hijo1{
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: relative;
+
+}
+
+.hijo2{
+    width: 50px;
+    height: 50px;
+    background: green;
+}

@@ -1,0 +1,67 @@
+/*
+
+Z-index
+Este es una capa dentro de la pagina, en el eje "z". Con este, los elementos
+ganan visibilidad
+SIEMPRE TIENE QUE ESPECIFICARSE CON UN POSITION, de lo contrario NO FUNCIONARA.
+Puede in en valores positivos o negativos. No debe ir con 
+pixeles, ni porcentajes, solamente el numero de capas que estara ocupando.
+Cuanto mayor positivamente, sera mas cercano.
+Por defecto, tiene valor de 0.
+Aqui, NO EXISTEN VALORES INTERMEDIOS (2.5, 3.5, ect). Lo recomendable es poner valores de 10 en 
+10.
+
+Overflow
+Dependiendo del atributo que acompañe a esta propiedad, podemos:
+-hidden: todo lo que salga del elemento al que se la aplique este atributo no se puede ver. Usado en
+animaciones
+
+Visibility
+Con esta propiedad, y dependiendo del atributo que acompañe:
+-hidden: permite ocultar el elemento, pero sin afectar al flujo, o el estado de los demas:
+El ejemplo utilizado aqui, se oculto uno de los divs (hijo1 oculto), y al refrescarse la pagina
+este no aparece, pero sin embargo, los otros elementos que lo acompañan no se ven afectados
+y conservan sus posiciones.
+
+Opacity:
+Determina la opacidad/transparencia del elemento. Valor del 0 al 1.
+Puede ser una especie de visibility: hidden, pero con la posibilidad
+de gradurarlo, de ponerle un valor de visisbilidad.
+
+*/
+.padre{
+    width: 350px;
+    height: 350px;
+    margin: 25px;
+    background: orange;
+    /*Uso de overflow. Probar con la propiedad y sin la propiedad, para ver efecto*/
+    overflow: hidden;
+}
+
+.hijo2{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+}
+/*En este caso, se trata de traer hacia el frente los elementos de hijo1*/
+
+.hijo1{
+    width: 50px;
+    height: 50px;
+    background: red;
+    display: inline-block;
+    /*Uso de z-index*/
+    z-index: 99;
+    position: relative;
+    top: -25px;
+}
+
+/*Declaracion del visisbility*/
+.oculto{
+    visibility: hidden;
+}
+/*Declaracion de opacity*/
+.transparencia{
+    opacity: 0.5;
+}

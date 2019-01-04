@@ -1,0 +1,25 @@
+/*
+En este archivo se usan diferentes tipos de
+selectores para definir tamaños de elementos en 
+HTML usando CSS
+
+*/
+
+div{
+    width: 50%;
+    height: 100px;
+    border: 1px solid black;
+}
+
+div.dimension{
+    /*Atributo para indicar el valor como minimo que debe tener la anchura una etiqueta*/
+    min-width: 250px;
+    /*Disminutye el tamaño, y lo mantiene como se especifico*/
+
+    /*Igual que en anterior, cambiando ahora el valor como maximo que debe tener el elemento*/
+    max-width: 400px;
+    /*No aumenta dependiendo de la resolucion de la pantalla*/
+
+    /*UTILIDAD: muy util para pantallas muy grandes*/
+}
+

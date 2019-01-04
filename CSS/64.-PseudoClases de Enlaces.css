@@ -1,0 +1,20 @@
+/*
+Una psedoclase es el estado en el que se encuentra un elemento. Un elemento 
+puede tener diferentes estados.
+Hay estados genericos, y mas propios dependiendo del elemento del que se este hablando
+Tambien aplicable a cosas visuales.
+No es posible cambiar cualquier cosa, solo las predeterminadas (investigar)
+*/
+
+/*En el siguiente ejemplo, el primer bloque de instrucciones sirve para indicar
+el color del link antes de ser visitado
+El segundo bloque sirve para indicar que el sitio ya ha sido visitado*/
+a#link1:link{
+    color: green;
+}
+
+a#link1:visited{
+    color: red;
+}
+
+

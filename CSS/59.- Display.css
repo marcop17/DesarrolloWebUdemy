@@ -1,0 +1,33 @@
+/*
+Display
+De inicio, cada pagina tiene un "dysplay block", que es el defecto.
+
+Existen diversos tipos de displays:
+
+-block: Display por defecto.
+
+-inline-block: Usado para que el espacio ocupado sea identico al tamaño contenido del elemento, 
+y se ponen unos a lado de otros siempre que haya espacio. FUNDAMENTAL PARA 
+RESPONSIVE DESING
+Es importante saber que con este comando se aplican margenes también, sin la palabra "block", no 
+colocaria margenes, se comporta como un solo bloque de lineas.
+
+-none: Desaparece un objeto/elemento. Util tambien para RESPONSIVE DESING. No usado para hacer trampas 
+para SEO.Este comando se utiliza principalmente al momento de querer ocultar cosas grandes, que si 
+aparecen en las versiones de navegador de computadora, pero que no se requieren en las versiones para
+celular de la pagina. Es una forma de activar y desactivar elementos.
+
+*/
+
+/*Visualizacion*/
+p#inline{
+    border: 2px solid black;
+    background: orange;
+    /*inline-block*/
+    display: inline-block;
+}
+p#none{
+    border: 2px solid black;
+    background: orange;
+    display: none;
+}

@@ -1,0 +1,80 @@
+/*
+Uso de margin y padding con mas opciones
+
+*/
+div{
+    width: 50%;
+    height: 100px;
+    border: 1px solid black;
+}
+
+/*
+Uso de Margin
+Cuando se le da un solo valor al margin, se esta aplicando el margin
+en todas las direcciones
+Si se le dan mas, se aplican se la siguiente manera:
+    -1er cifra: Se aplica el margin arriba y abajo del elemento.
+    -2da cifra: Se aplica a los laterales del elemento
+    -3er y 4tas cifras: Junto con las 2 anterioes, en este caso se aplica 
+    cada medida en sentido de las manecillas del reloj.
+
+Pueden combinarse los tipos de medidas, en el mismo atributo.
+
+
+*/
+
+div.dimension{
+    background: #9c1010;
+    min-width: 250;
+    max-width: 400px;
+    margin: 20px 50px; /*Para mas cifras separar mediante un espacion.*/
+    /*margin: 50px 20 px 100 px 60px*/
+    
+}
+div.tipos_medidas{
+    background: #00ad3a;
+    margin: 20px 45px 10px 3%;
+    /*Tambien podemos especificar a que lado del elemento aplicaremos un margin
+    en dado caso de que digamos que queremos que tres lados sean iguales, pero uno
+    diferente: */
+    margin-left: 250px; /*Lado izquierdo*/
+    margin-right: 80px; /*Lado derecho*/
+    margin-top: 50; /*Parte superior*/
+    margin-bottom: 60px; /*Parte inferior*/
+}
+/*Es importante tener en cuenta el orde en como se escriben los diferentes
+atributos, para que no afecte a la pagina, los ultimos elementos seran los primeros
+a cargar, asi que es ideal pensar que ira primero y tambien tener
+en cuenta que se pueden sobreescribir valores iguales*/
+
+
+/*
+Uso de Padding
+
+Cuando se le da un solo valor al padding, se esta aplicando el padding
+en todas las direcciones
+Si se le dan mas, se aplican se la siguiente manera:
+    -1er cifra: Se aplica el margin arriba y abajo del elemento.
+    -2da cifra: Se aplica a los laterales del elemento
+    -3er y 4tas cifras: Junto con las 2 anterioes, en este caso se aplica 
+    cada medida en sentido de las manecillas del reloj.
+
+El padding es uno de los problemas mas recurrentes a la hora de diseñar
+por que si no se cuida este aspecto, la pagina ya no es "responsive" en algunos
+casos.
+*/
+
+/*Div para el parrafo*/
+div.padding1{
+    background: #2500ad;
+    margin: 20px 45px 10px 3%;
+    margin-left: 250px; 
+    margin-right: 80px; 
+    margin-top: 50; 
+    margin-bottom: 60px;
+    padding: 5px;
+}
+p{
+    border: 1px solid red;
+    background: white
+}

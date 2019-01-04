@@ -1,0 +1,27 @@
+/*
+A los elementos comunes van asociados pseudoelementos.
+Un pseudoelemento tiene dos elementos:
+    -before: Toma como referencia al punto inicial del elemento
+    -after: Toma como referecia al punto final del elemento
+La posicion en la que vayan no importa. 
+Los pseudolementos siempre siguen al elemento al que pertenecen.
+Los pseudoelementos NO SON SELECCIONABLES POR EL USUARIO.
+Todo pseudo elemento debe llevar SIEMPRE:
+    -content
+
+Util para cosas visuales
+
+
+*/
+/*Con ":atributo" ya se esta controlar el pseudoelemento*/
+p{
+    position: relative;
+}
+
+p:after{
+    color: red;
+    content:  "Este es un saludo";
+    top: 50px;
+    position: relative;
+    left: 150px;
+}

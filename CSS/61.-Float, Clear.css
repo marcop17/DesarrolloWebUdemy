@@ -1,0 +1,43 @@
+/*
+Float y Clear
+Son formas diferentes de posicionamiento
+
+Float: Similar a ABSOLUTE. EL resultado de su uso es como "una sangria". 
+Va de la mano con inline-block, y lo que hace es que cada elemento que este
+hacia alguno de sus lados, se ira posicionando hacia ese lado, ocupara ese hueco dejado<.
+En el ejemplo de este archivo, el float esta en el hijo2, que esta hacia la izquierda,
+por tanto, todos los elementos que esten a la derecha de hijo 2, ocuparan el espacio
+de la derecha, nunca se posicionaran sobre el elemento hijo2.
+
+Para quitar la influencia se utiliza CLEAR.
+El clea se hace en el sentido en el que va el float
+Ademas debe ir sin un inline-block
+
+*/
+
+.padre{
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+    background: yellow;
+}
+
+.hijo2{
+    width: 100px;
+    height: 100px;
+    background: green;
+    float: left;
+}
+.hijo1{
+    width: 50px;
+    height: 50px;
+    background: blue;
+    display: inline-block;
+}
+
+.mashijos{
+    width: 60px;
+    height: 60px;
+    background: red;
+    display: inline-block;
+}
