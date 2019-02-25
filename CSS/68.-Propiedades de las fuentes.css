@@ -1,0 +1,54 @@
+/*
+Propiedades de las fuentes.
+Cada fuente tiene caracteristicas y limitantes.
+No caer en el error de usar todas, solamente las necesarias
+*/
+
+p.text{
+    font-family: arial;
+    
+    /*Esta propiedad especifica el peso o grueso de la letra*/
+    font-weight: bolder; 
+    /*Sus valores pueden ser:
+        -100 a 800;
+        -Normal
+        -Lighter
+        -Bold
+        -Bolder
+    */
+    /*Permite definir el aspecto de una familia tipográfica entre los valores: normal, italic (cursiva) y oblique*/
+    font-style: oblique;
+    
+    /*Permite alinear el texto de diversas maneras. (Justificar, izquierda, derecha, etc.)*/
+    text-align: justify;
+
+    /*Sirve para colocar estilos al texto (norma/none, underline, overline, line-through)*/
+    text-decoration: line-through;
+
+    /*Permite transformar el texto de acuerdo al atributo (capitalize, uppercase, lowercase, etc.) Util para emails*/
+    text-transform: capitalize;
+        /*Existe una variante que permite colocar todo en mayusculas, pero con apariencia de minusculas, excepto cada primera letra*/
+        font-variant: small-caps;
+    
+    /*Sirve para identar el texto, aplicando una "sangria". Puede especificarse en pixeles */
+    text-indent: 14px;
+    
+    /*Sirve para especificar el espacio entre letras. Se le conoce como tracking. Se mide en pixeles. Puede ir en sentido negativo*/
+    letter-spacing: 1px;
+
+    /*Sirve para especificar el espacio entre palabras.*/
+    word-spacing: 1px;
+}
+
+/*Pseudoelementos al texto*/
+
+/*Se indica que a la primera letra se le aplicara la propiedad. Util para textos antiguos*/
+p.text:first-letter{
+    font-size: 36px;
+}
+/*Se indica que a la primera linea del texto se le aplicara la propiedad*/
+p.text2:first-line{
+    font-size: 36px;
+}
+
+

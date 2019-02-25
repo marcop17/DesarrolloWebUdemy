@@ -1,0 +1,59 @@
+/*
+Como instertar tipografias en una pagina web
+
+De manera interna o externa
+Las tipografias tambien tienen sus formatos, asi como las imagenes
+o videos. Y asi como con estos ultimos, hay que tener en cuenta que no todos los navegadores
+pueden procesar los formatos. Es recomendable colocar un "backup de la fuente" en dado caso 
+de que el navegador no reconozca la fuente.
+
+Nivel interno: 
+Archivos del sitio web propios con fuentes a insertar.
+Cuando no se encuentra una fuente, se pone una por defecto. Es tambien recomendable
+colocar otra fuente que queramos para que la cargue en ultima instancia.
+Esto es muy util para fuentes externas.
+
+Para declarar un tipo de fuente se utiliza el simbolo "@" seguido de font-face:
+Dentro de los atributos que llevara la declaracion, hay que poner 
+    -font-family que sera el nombre de la fuente deseada
+    -scr: url(ubicacion/NombreFuente.Extension): Aqui va la ubicacion de la fuente deseada
+        -Si el navegador no puede reconocer el formato de la fuente, entonces se colocara:
+            src: local(´?´), (<-separado por esta coma)
+                url(ubicacion/NombreFuente.Extension) format(extension/formato),
+                url(ubicacion/NombreFuente.Extension) format(extension/formato);
+
+Nivel externo:
+Sacadas de sitios web
+Se pueden obtener de google fonts
+    -En esta pagina cada fuente indica el nivel de rapidez que carga que tiene.
+    -IMPORTANTE: Algunas fuentes pueden tener limitantes, por lo que puede o no trabajar bien
+    o puede ser que las caracteristicas no puedan ser modificadas.
+
+Para obtener el codigo hay que dar clic o buscar donde diga: "embed", y cuando se haga esto
+COPIAR EL CODIGO EN EL HEAD DEL ARCHIVO HTML, NO EN EL CSS.
+
+Lo que se hara en el CSS despues de lo anterior es:
+    -font-family que sera el nombre de la fuente deseada dentro de la etiqueta o etiquetas 
+    a las que se les aplicara la fuente
+*/
+
+/*Fuente interna*/
+@font-face{
+    font-family: "irlandesa";
+    src: url(font/irlandesa.eot); /*Para cargar la fuente desde nuestros archivos*/
+    src: local("?"), /*Como bakups por si no se encuentra la primer fuente*/
+        url(font/irlandesa.woff), format(woff),
+        url(font/irlandesa.ttf) format(truetype);
+}
+
+p{
+    /*Familia de fuentes*/
+    font-family: "irlandesa", Impact;
+}
+
+span{
+    /*La fuente de google contiene dos fuentes, la primera que va a aplicarse, y la segunda que
+    en dado caso de que la primera no pueda aplicarse, la segunda sea lo mas parecida posible
+    a esa primera. */
+    font-family: 'Coiny', cursive;
+}

@@ -1,0 +1,32 @@
+/*
+Hover: ayuda en animaciones. Cuando se pasa el cursor por encima
+del elemento este reacciona dependiendo de los elementos que tenga su CSS.
+Se pueden cambiar con esta propiedad:
+    -Tamaño
+    -Estilo
+    -anchura
+    -etc.
+Solo aplica a pantallas de escritorio
+
+
+Diferencia entre el hover y el span:
+El hover cambia automaticamente cuando se posiciona el cursor sobre el elemento, el 
+span no, aqui tiene que darse un clic sobre el mismo elemento.
+
+Focus:
+Usado para indicar al ususario donde se encuentra. Resalta la caja de un inputs
+
+
+*/
+p:hover{
+    color: green;
+}
+
+span:active{
+    color: blue;
+}
+
+input:focus{
+    border-radius: 20px;
+
+}

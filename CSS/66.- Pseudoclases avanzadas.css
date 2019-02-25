@@ -1,0 +1,56 @@
+/*Elementos del dic*/
+
+div *{
+    border: 1px solid black;
+    width: 80px;
+    height: 50px;
+    background: white;
+    display: inline-block;
+}
+/*Se cambia el color al tercer hijo, al que se esta apuntando*/
+div *:nth-child(2){
+    background: orange;
+}
+/*Se cambia el color al 8vo elemento, que es el segundo de menor a mayor*/
+div *:nth-last-child(2){
+    background: red;
+}
+/*Se especifica un color a todos aquellos hijos que tengan un numero impar*/
+div *:nth-child(odd){
+    background: yellow;
+}
+
+/*Se marca al elemento numero 2 de tipo parrafo, con un color*/
+div p:nth-of-type(3){
+    background: hotpink;
+}
+
+
+
+/*
+:nth-child(N) Se enfoca al numero que ocupa un hijo, dentro del padre. Es el elemento al
+que vamos a apuntar.
+
+:nth-last-child(N): Lo mismo que el de arriba, solo que en este caso va de del ultimo hasta el primero
+
+:nth-of-type: El atributo que debe ir a la derecha de esta pseudoclase debe ser el tipo de elemento
+(aside, article, etc,) y despues el numero que le corresponde a ese elemento.
+
+:nth-of-last-type:Igual al de arriba, empezando desde el ultimo hasta el primero
+
+:last-of type: Se marca el primero de un tipo
+:first-of-type: Se marca el ultimo de un tipo 
+:only-of-type: Se marca solo un tipo, si hay mas de uno del mismo tipo ya no
+:empty: Se marca el elemento si no tiene nada
+:not(S): Se marca el elemento que no sea de un selector que nosotros especifiquemos
+
+:last-child: Ultimo hijo
+:only-child: Unico hijo
+:root: Elemento raiz
+:enable: Elementos que estan ativados
+:disable: Elementos que estan desactivados
+:checked: Checkboxs, o botones
+
+even/odd: Para numeros pares/impares. 
+
+*/

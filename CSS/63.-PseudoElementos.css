@@ -13,7 +13,7 @@ Util para cosas visuales
 
 
 */
-/*Con ":atributo" ya se esta controlar el pseudoelemento*/
+/*Con ":atributo" ya se esta controlando el pseudoelemento*/
 p{
     position: relative;
 }
