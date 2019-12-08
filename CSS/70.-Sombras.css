@@ -1,0 +1,38 @@
+/*
+Sombras. Para sombrear los elementos
+Se pueden combinar o personalizar.
+
+Se aplican a texto, y a elementos
+Existen dos propiedades de sombras:
+    (box-shadow): Para cajas
+    (text shadow): Para texto
+T estas dos tienen 4 valores:
+    1.- DesplazamientoHorizontal. (Cuenta hacia la derecha) (Cambiar la direccion, poner valores negativos)
+    2.- DesplazamientoVertical (Cuenta hacia abajo por defecto. Para que vaya hacia arriba, poner cantidades negativas. Para dejarlo sin sombra, poner 0)
+    3.- Difuminado. Replica de la capa superior. 
+    4.- Color
+Y se declaran como: box-shadow:  %ValorHor %ValorVert %ValorDifmu ColorValor4
+
+Para que la sombra sea interna, colocar la instruccion: inset
+    box-shadow: inset %ValorHor %ValorVert %ValorDifmu ColorValor4
+
+Para combinar sobras, se debe poner comas entre cada definicion de cada sombra
+*/
+
+div{
+    height: 200px;
+    width: 200px;
+    background: orange;
+    margin: 50px;
+    text-align: center;
+    box-shadow: 10px 10px 0px red,
+                -20px 5px 10px blue;
+}
+
+p{
+    position: relative;
+    top: 90;
+    font-size: 20px;
+    text-shadow: 10px 10px 2.5px black;
+}
+

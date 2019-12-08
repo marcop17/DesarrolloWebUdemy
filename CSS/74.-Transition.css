@@ -1,0 +1,31 @@
+/*
+Transiciones
+Ayuda a que el cambio de elementos tranformados sea de manera gradual.
+Tiene diferentes propiedades:
+    -transition-property: all; Se aplica la transicion a todos las propiedades del transform
+    -transition-duration: Se aplica una duracion a las propiedades. Medida en segundos
+    -transition-timing-function: Aplica la progresion de la transformacion del elemento.Sus valores son:
+        ease
+        ease-in
+        ease-out
+        ease-in-out
+        linear (por defecto)
+        delay 
+Solo solo se aplica la transformacion a las propiedades de tranform, si no a todas las propiedades que tenga el elemento tranformado.
+*/
+
+div{
+    height: 200px;
+    width: 200px;
+    background: red;
+    border: 2px solid black;
+    margin: 50px;
+    transition-property: all;
+    transition-duration: 6s;
+    transition-timing-function: ease-in;
+}
+
+.aux:hover{
+    transform: rotate(90deg) skew(20deg);
+    background: green;
+}

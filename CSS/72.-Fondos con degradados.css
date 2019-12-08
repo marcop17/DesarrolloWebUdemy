@@ -1,0 +1,35 @@
+/*
+Fondos con degradados
+
+Para colocar un degradado a un fondo, se hace declarando:
+background: linear-gradient(
+        Comienzo del degradado (posicion), incluso con inclinacion (deg)
+        Color1 %porcentaje,
+        Color2 %porcentaje,
+        Color3 %porcentaje,
+        Color... %porcentaje,
+    );
+Importante: podria ser posible que lleve el prefijo del navegador la instruccion linear-gradient para visualizar el degradado
+
+Degradado circular. Solo cambiar la palabra linear, por radial en linear-gradient -> radial gradient. 
+Misma declaracion
+*/
+div{
+    height: 200px;
+    width: 200px;
+    border: 4px solid red;
+    margin: 50px;
+}
+
+.imagen{
+    background: url(imagen.jpg);
+}
+
+.degradados{
+    background: -webkit-linear-gradient(
+        left, 
+        blue 0%,
+        red 30%,
+        green 80%
+    );
+}

@@ -1,0 +1,33 @@
+/*
+Fondos com imagenes
+La imagen por si misma no se puede modificar.
+Es diferente insertar una imagen a crear un forndo con una imagen
+
+Para posicionar el fondo de un elementos existen tres opciones:
+    border-box (desde el borde)
+    padding-box (desde la zona del padding)
+    content-box (desde la zona del contenido)
+
+La propiedad background: url(); va acompañada de otras propiedades que indican si se requiere de repetir el fondo
+o no, y desde qué eje (x/y)
+Se puede "colorear" la imagen, utilizando las tres opciones anteriores. 
+
+Se pueden combinar imagenes, y se realiza mediante comas, una entre cada imagen. Debe tenerse
+en cuenta el orden que van las imagenes. Tambien se debe tener en cuenta los parametros o atributos de cada imagen
+para que se vean bien.
+
+*/
+div{
+    height: 400px;
+    width: 1200px;
+    border: 2px solid red;
+    margin: 50px;
+    background: url(imagen.jpg);
+    
+}
+
+/* Modificacion de imagen mediante instrucciones
+figure, img{
+    width: 10%;
+}
+*/

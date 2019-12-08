@@ -1,0 +1,54 @@
+/*
+Transformaciones
+Consiste en hacerles cambios a un elemento en diferentes formas
+
+transform: tipo(cantidad);
+
+Esta sujeto a variantes:
+    -Aplica para los ejes x/y. (Puede pasarse como parametros)
+
+Propiedades (En grados la mayoria)
+    rotate: Rota al elemento. Es posible rotar desde algun pubti del elemento con: transform-origin: posicion; Se hace en sentido del reloj, y se le puede asignar un porcentaje
+    skew : Deforma al elemento
+    translate: cambia de posicion al elemento, sin afectar al flujo de colocacion de los demas elementos del HTML. Medida de pixeles, 
+    scala: escala al elemento
+Se puede combinar este tipo de elementos, dejando un espacio entre cada propiedad
+    transform: tipo() tipo() tipo(), ...
+
+Se suelen hacer en pseudo clases, y de manera brusca. Debe ser progresivo
+*/
+div#rotate{
+    height: 200px;
+    width: 200px;
+    background: orange;
+    border: 2px solid black;
+    margin: 50px;
+    transform: rotate(20deg); 
+    transform-origin: top right;
+    /*transform-origin: 5%, 20%; En coordenadas "x" y "y"*/ 
+}
+div#skew{
+    height: 200px;
+    width: 200px;
+    background: blue;
+    border: 2px solid black;
+    margin: 50px;
+    transform: skew(20deg, 5deg)
+}
+div#translate{
+    height: 200px;
+    width: 200px;
+    background: blue;
+    border: 2px solid black;
+    margin: 50px;
+    transform: translate(5px)
+}
+
+div#scale{
+    height: 200px;
+    width: 200px;
+    background: blue;
+    border: 2px solid black;
+    margin: 50px;
+    transform: scale(0.5);
+}

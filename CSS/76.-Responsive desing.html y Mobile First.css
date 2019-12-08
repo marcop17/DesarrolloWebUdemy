@@ -1,0 +1,58 @@
+/*
+Diseño responsivo y mobile first
+
+Mobile First: Consiste en desarrollar los elementos de una pagina para que
+se orienten por defecto a pantallas de moviles.
+
+Para adaptabilidad, es recomendable utilizar porcentajes, aunque es posible hacerlos
+con tamaños fijos. La clave es que el usuario no vea el scroll horizontal.
+
+Tambien es recomentable no usar el 100$ de la pantalla
+
+*/
+body{
+    background: blueviolet;
+}
+
+div{
+    width: 80%;
+    height: 150px;
+    /*border: 2px solid black;*/
+    margin: 8%;
+    display: inline-block;
+    background: white;
+}
+
+/*Lineas de guia, con medidas de dispositivo
+Lo que hace la linea es:
+    Registra la pantalla: @media screen
+    y (and)
+    y comprueba la anchura, para adaptarse: (min-width: cant)
+Funciona como un if.
+*/
+
+@media screen and (min-width: 480px){ /*Telefono normal*/
+    body{
+        background: green;
+    }
+}
+
+@media screen and (min-width: 767px){ /*Tablet*/
+    body{ 
+        background: red;
+    }
+    div{
+        width: 40%;
+        margin: 4%;
+    }
+}
+@media screen and (min-width: 950px){ /*Pantalla de escritorio*/
+    body{
+        background: yellow;
+    }
+    div{
+        width: 28%;
+        margin: 2%;
+    }
+}
+

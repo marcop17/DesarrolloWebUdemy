@@ -1,0 +1,37 @@
+/*
+El objetivo de los bordes en una pagina son:
+    -Tener un mejor atractivo
+    -Mejorar la permanencia
+    -Mejorar la usabilidad
+
+Los tres atributos fundamentales para establecer el borde a un elemento son:
+
+    border-widht: Anchura del borde
+    border-style: indica el tipo de borde (existen muchos que definen un borde) Va de la mano con border-color
+    border-color: color del borde
+
+Es posible combinar los tres atributos anteriores en una sola linea, con la instruccion:
+    border: 
+No importa el orden de los atributos
+
+Tambien se puede personalizar un borde. Incluso se puede modificar cada borde por separado.
+
+El radio del borde se indica con: border-radius. Tambien es personalizable (se puede
+combinar con otros atributos)
+
+    */
+
+div{
+    height: 200px;
+    width: 100px;
+    background: orange;
+    margin: 50px;
+
+    border-color: red;
+    border-style: solid;
+    border-width: 5px;
+
+    border-radius: 20px;
+
+    /* border green 2px solid (Todo lo anterior en una linea)*/
+}

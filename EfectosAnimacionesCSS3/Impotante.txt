@@ -1,0 +1,3 @@
+Algunos videos del curso de Udemy son solo de bienvenida.
+Los archivos de videos seran numerados de acuerdo a los videos de Udemy. Si algun archivo falta, probablemente
+es por que es un aviso, o en video no se uso codigo, y siemplemente no es necesario colocar un texto aqui.
