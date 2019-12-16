@@ -1,0 +1,29 @@
+/*
+Sombra externa
+
+
+Para desplazamientoss pequeños y difuminados cortos, sombras mas duras
+Para desplazamientos pequeños y difuminados mas grandes, sombras mas suaves
+*/
+div{
+    font-family: 'Arial';
+    background-color: #a8cf45;
+    margin: 10px 10px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 15px 30px;
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sombra_externa{
+    /*Dentro de box-shadow, existen 4 parametros:
+    box-shadow: DesplazamientoHorizontal DezplazamientoVertical Difuminado Grosor/Color*/
+    box-shadow: 0px 0px 1px black;
+    -webkit-transition-duration:0.3s;
+}
+
+.sombra_externa:hover{
+    box-shadow: 2px 3px 3px black;
+}

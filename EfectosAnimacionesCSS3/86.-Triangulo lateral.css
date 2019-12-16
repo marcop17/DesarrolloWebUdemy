@@ -1,0 +1,39 @@
+/*
+Triangulo lateral
+Aparece y desaparece un triangulo lateral sobre el elemento 
+en el que se esta trabajando
+*/
+div{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #a8cf45;
+    margin: 10px 10px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 15px 30px;
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.triangulo_lateral{
+    -webkit-transform:translateX(0);
+}
+.triangulo_lateral:before{
+    content: '';
+    -webkit-transition-duration:0.3s;
+    /*Creacion del triangulo*/
+    border-style: solid;
+    border-width: 15px 15px 15px 0px;
+    border-color: transparent
+                red
+                    /*#a8cf45*/
+                transparent
+                transparent;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -15px;
+}
+.triangulo_lateral:hover:before{
+    left: -15;
+}

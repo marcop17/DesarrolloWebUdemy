@@ -1,0 +1,27 @@
+/*
+Sombra difuminada
+*/
+
+div{
+    font-family: 'Arial';
+    background-color: #a8cf45;
+    margin: 10px 10px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 15px 30px;
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sombra_difum{
+    -webkit-transition-duration:0.3s;
+    /*Dentro de boz-shadow, existen 4 parametros:
+    box-shadow: DesplazamientoHorizontal DezplazamientoVertical Difuminado Grosor/Color*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0,1)
+    
+}
+
+.sombra_difum:hover{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0,0.6)
+}

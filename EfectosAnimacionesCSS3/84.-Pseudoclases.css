@@ -1,0 +1,44 @@
+/*
+Pseudoclases
+
+Es un estado de un elemento/Uso que se le da a ese elemento
+No todos los elementos html tienen las mismas pseudoclases:
+    -Algunos tienen clases propias
+Sintaxis:
+    ElementoAAplicar:TipoDePseudoClase{
+        Intrucciones
+    }
+Las caracteristicas se heredan, esto quiere decir que:
+    Si hay elementos hijos dentro de un padre al cual se le aplica una pseudoclase
+    entonces los hijos hereredan tambien las pseudoclases que tenga el padre.
+    A menos que se indique lo contrario
+
+*/
+div{
+    border: 2px solid black;
+    width: 50%;
+    position: relative;
+    margin-left: 25%;
+}
+
+/*
+Clase Hover
+Para que, cuando el cursor se posicione sobre un enlace, 
+haga determinadas instrucciones
+*/
+div:hover{
+    background: orange;
+}
+/*Clase Focus. Util para indicar a que elemento se esta enfocando, o se esta actualmente. 
+La pseudoclase focus solo pertenece a enlaces, a otro tipo de elemtos
+no es posible indicarsela*/
+a:focus{
+    color: red;
+}
+/*
+Clase Active
+La clase active es similar a focus, con la diferencia que, cuando se suelte 
+el click del raton, dejara de funcionar el efecto
+*/
+
+

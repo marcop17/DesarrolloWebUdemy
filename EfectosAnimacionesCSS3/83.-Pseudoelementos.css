@@ -1,0 +1,30 @@
+/*
+Pseudoelementos
+Cuando se declara un elemento, va a acompañado de otros dos, que son
+ -Before: Antes
+ -After: Despues
+No es obligatorio que sea asi siempre, pueden ir donde se desee dentro del codigo del elemento
+
+Si se declaran, comienzan a existir y a gestionar el aspecto del elemento. Aun sin declararlos, existen, pero no hacen nada.
+
+ Algo OBLIGADO para los pseudoelementos es el 
+  -CONTENT
+*/
+div{
+    border: 2px solid black;
+    width: 50%;
+    position: relative;
+    margin-left: 25%;
+}
+
+div:before{
+    content: 'Hola';
+    position: absolute;
+    right: 0px;
+    bottom: 0xp;
+    background: red;
+}
+
+div:after{
+    content: 'Mundo';
+}
